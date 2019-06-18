@@ -74,7 +74,7 @@ if ($(window).width() < 739) {
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("menu").style.top = "0";
     } else {
-      document.getElementById("menu").style.top = "-143px";
+      document.getElementById("menu").style.top = "-60px";
       document.getElementById("menu").style.transition = "all 0.5s ease";
     }
     prevScrollpos = currentScrollPos;
