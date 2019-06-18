@@ -127,3 +127,12 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 565px) {
+  .x-large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1.25rem;
+  }
+}

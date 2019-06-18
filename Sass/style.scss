@@ -31,6 +31,10 @@ a {
   color: $primary-color;
 }
 
+p {
+  letter-spacing: 0.05rem;
+}
+
 ul {
   list-style: none;
 }
@@ -44,6 +48,10 @@ img {
 }
 
 /*Text styling  -------------------------------------------*/
+h1 {
+  line-height: 3rem;
+  font-size: 2rem;
+}
 h1,
 h2,
 h3 {
@@ -57,6 +65,7 @@ h3 {
 hr.style-one {
   border: 0;
   height: 1px;
+  margin-bottom: 30px;
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
@@ -65,11 +74,18 @@ hr.style-one {
   );
 }
 .line_break {
-  height: 3px;
-  width: 100%;
+  // height: 3px;
+  // width: 100%;
   background: $primary-color;
   border: 0;
-  margin: 40px 0 70px 0;
+  margin: 40px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+  height: 1px;
 }
 
 // Navbar
@@ -79,14 +95,19 @@ hr.style-one {
   justify-content: space-between;
   padding: 0.7rem 2rem;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   top: 0;
   border-bottom: solid 1px $primary-color;
-  opacity: 0.9;
 
   ul {
     display: flex;
+
+    li {
+      a {
+        font-size: 1.125rem;
+      }
+    }
   }
 
   .logo {
@@ -142,88 +163,132 @@ hr.style-one {
 .scroller {
   /*Object som menyns scroll går mot. Förskjuten för att inte fixed menu ska vara ivägen.*/
   position: relative;
-  top: -120px;
+  top: -68px;
   margin: 0;
 }
 
 /*Main*/
 main {
-  clear: both;
-  margin: 0 auto;
-}
-main p {
   text-align: center;
-}
-.right {
-  margin: 0 auto;
-}
-.about {
-  display: flex;
-  text-align: center;
-}
-#photo_me {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.skills {
-  z-index: 1;
-  background: $primary-color;
-  text-align: left;
-  padding: 5px;
-  margin: 10px 0;
-  height: 30px;
-  width: 300px;
-  background: $dark-color;
-  position: relative;
-}
-.skills::after {
-  display: block;
-  position: absolute;
-  left: 110px;
-  top: 0;
-  content: "";
-  background: $dark-color;
-  z-index: 4;
-  width: 300px;
-  height: 30px;
-}
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-
-  .project_items {
-    height: 300px;
-    width: calc(33.33% - 40px);
-    min-width: 300px;
-    margin: 20px;
-    position: relative;
-    color: black;
+  .container {
+    margin: 0 auto;
+  }
+  main p {
     text-align: center;
-    cursor: pointer;
-    overflow: hidden;
+  }
+  .right {
+    margin: 0 auto;
+  }
+  .about {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-    img {
-      width: 95%; /*Bilden i mitten hoppar 1px om det är 100%*/
-      height: 100%;
-      position: relative;
+    .left {
+      flex-basis: 50%;
+      flex: 1;
+
+      #photo_me {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        margin: 0 30px;
+      }
+
+      p {
+        padding: 30px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 50%;
+      flex: 1;
+
+      .skills {
+        z-index: 1;
+        background: $primary-color;
+        text-align: left;
+        padding: 5px;
+        margin: 5px 0;
+        height: 30px;
+        width: 400px;
+        background: $dark-color;
+        position: relative;
+      }
     }
   }
 
-  .project_items:hover .project_info {
-    /*Infotext on hover*/
-    transform: translateY(-60px);
-    transition: transform 0.3s;
-    height: 60px;
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .project_items {
+      height: 300px;
+      width: calc(33.33% - 40px);
+      min-width: 300px;
+      max-width: 350px;
+      margin: 20px;
+      position: relative;
+      color: black;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        width: 95%; /*Bilden i mitten hoppar 1px om det är 100%*/
+        height: 100%;
+        position: relative;
+      }
+    }
+
+    .project_items:hover .project_info {
+      /*Infotext on hover*/
+      transform: translateY(-60px);
+      transition: transform 0.3s;
+      height: 60px;
+    }
+
+    .project_info {
+      color: #fff;
+      position: relative;
+      background: $dark-color;
+      line-height: 60px;
+      transition: all 0.3s ease-in;
+    }
   }
-  .project_info {
-    color: #fff;
-    position: relative;
-    background: $dark-color;
-    line-height: 60px;
-    transition: all 0.3s ease-in;
+  .contact {
+    .contact_section {
+      p {
+        margin: 30px 0;
+
+        a {
+          &:hover {
+            color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin: 100px 0 30px 0;
+  text-align: center;
+
+  .fab {
+    font-size: 1.5rem;
+    margin-top: 20px;
+
+    &:hover {
+      color: $dark-color;
+    }
   }
 }
 
@@ -238,5 +303,27 @@ main p {
   100% {
     opacity: 1;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+  main {
+    .about {
+      .right {
+        .skills {
+          min-width: 280px;
+          width: 90%;
+        }
+      }
+    }
   }
 }

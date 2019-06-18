@@ -1,0 +1,102 @@
+h1, h2 {
+	text-align: center;
+	font-weight: normal;
+	margin: 10px 0;
+}
+.winner {
+	color: red;
+	height: 20px;
+}
+main {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #aaa;
+/*	background: -moz-linear-gradient(top, #4f6879 0%, #4f5660 100%);
+	background: -webkit-linear-gradient(top, #4f6879 0% ,#4f5660 100%);
+	background: linear-gradient(to bottom, #4f6879 0% ,#4f5660 100%);*/
+	height: 100vh;
+	position: relative;
+}
+body {
+	font-family: roboto;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	height: 100vh;
+}
+
+.hangman {
+	width: 200px;
+	height: 333px;
+	display: block;
+	box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: auto;
+    border-radius: 20px;
+	
+}
+
+.characters {
+	background-color: #f7f7f7;
+	display: inline-block;
+	margin: 0 5px 5px 5px;
+	background: transparent;
+}
+
+.char {
+	margin: 5px 0;
+	min-width: 15px;
+	padding: 4px; 
+	background-color: #eee;
+	border-radius: 3px;
+	display: inline-block;
+	box-shadow: 0 0 2px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+.guessword {
+	font-size: 24px;
+	text-align: center;
+	box-sizing: border-box;
+	height: 50px;
+	width: auto;
+	padding-top: 10px;
+	background-color: transparent;
+}
+
+.char:focus {
+	background-color: #fff;
+	border: 3px solid #2989b9;
+	outline: none;
+}
+
+.completed {
+	/*display: none;*/
+	text-decoration: line-through;
+	background-color: #2989b9;
+}
+
+.gameOver{
+	background: rgba(12,12,12,0.95);
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 10px;
+	position: relative;	
+	top: -250px;
+	padding: 40px;
+	display: none;
+}
+.display{
+	display: block;
+}
+
+.gameOver p{
+	font-size: 24px;
+}
+#playAgainButton{
+	width: 150px;
+	height: 50px;
+	margin-top: 15px;
+}

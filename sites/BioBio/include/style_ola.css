@@ -1,0 +1,145 @@
+/*body {
+  background-color: black;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-right: 80px;
+}*/
+/* Carousel */
+.homeCarousel {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.carousel-article-triple {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-article-triple {
+    display: none;
+  }}
+
+  .carousel-article-single {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  }
+
+  
+
+  @media only screen and (min-width: 768px) {
+  .carousel-article-single {
+    display: none;
+  }}
+
+.carousel-control-prev {
+  left: -90px;
+}
+
+.carousel-control-next {
+  right: -90px;
+}
+
+@media only screen and (max-width: 768px) {
+.carousel-control-prev {
+  left: -40px;
+}
+.carousel-control-next {
+  right: -40px;
+}  }
+
+.carousel-indicators {
+bottom: -25px;
+}
+
+/* Puffar filmer */
+.puff-article {
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  /*background-color: #0f2342;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #3b5989;
+  border-radius: 10px;*/  
+}
+
+@media only screen and (min-width: 1299px) {
+  .puff-article {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+.puff-article h2 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 3px 3px 3px #aaa;
+}
+
+@media only screen and (max-width: 768px) {
+  .puff-article h2 {
+    font-size: 36px;
+  }}
+
+.puff-container {
+  display: grid;
+  justify-content: center;
+ /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );;
+}
+
+@media only screen and (min-width: 899px) {
+  .puff-container {
+    grid-template-columns: 175px 175px 175px 175px 175px;
+    }}
+
+@media only screen and (min-width: 991px) {
+  .puff-container {
+     grid-template-columns: 200px 200px 200px 200px 200px;
+    }}
+
+.puff-item {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.puff-item p {
+  color: white;
+}
+
+.card {
+  background: black;
+}
+
+.card a .card-img-top:hover{
+opacity: 0.9;
+}
+
+.card-text {
+ margin-top: -20px;
+}
+
+/* Sortering filmer*/
+.sortering p {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 3px 3px 3px #aaa;
+}
+
+.sortering {
+  display: inline-block;
+  padding: 10px;
+}
