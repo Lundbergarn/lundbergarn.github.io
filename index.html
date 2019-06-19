@@ -24,9 +24,9 @@
   <body>
     <span class="anchor" id="top"></span>
 
-    <nav id="menu" class="navbar bg-dark">
+    <nav id="menu" class="navbar shadow">
       <p class="logo">
-        <a href="#start_top">Christoffer Lundberg</a>
+        <a href="#start_top"><i class="fas fa-code"></i> Lundberg</a>
       </p>
       <ul>
         <li><a href="#about">About</a></li>
@@ -45,7 +45,9 @@
           </p>
         </div>
       </div>
-      <a class="button_start" href="#about">START</a>
+      <a class="button_start" href="#about"
+        ><i class="fas fa-chevron-down"></i
+      ></a>
     </section>
 
     <h1 class="scroller" id="start_top"></h1>
@@ -54,7 +56,7 @@
       <!-- MAINCONTENT -->
       <div class="container">
         <h1 class="scroller" id="about"></h1>
-        <section>
+        <section class="skills_container">
           <h1>About</h1>
           <br />
           <div class="about">
@@ -66,13 +68,18 @@
               </p>
             </div>
             <div class="right grid">
+              <div class="skills">JavaScript</div>
+              <div class="skills">React</div>
+              <div class="skills">jQuery</div>
+              <br />
+
               <div class="skills">HTML</div>
               <div class="skills">CSS</div>
-              <div class="skills">JavaScript</div>
+              <br />
+
               <div class="skills">Photoshop</div>
               <div class="skills">Figma</div>
-              <div class="skills">jQuery</div>
-              <div class="skills">UX</div>
+              <div class="skills">UI / UX</div>
             </div>
           </div>
         </section>
@@ -83,7 +90,7 @@
       <h1 class="scroller" id="projects"></h1>
 
       <div class="container">
-        <section class="widthMain">
+        <section>
           <h1>Projects</h1>
           <br />
           <div class="projects ">
@@ -132,18 +139,20 @@
 
       <h1 class="scroller" id="contact"></h1>
 
-      <div class="contact width">
-        <h1>Contact</h1>
+      <div class="container">
+        <div class="contact">
+          <h1>Contact</h1>
 
-        <section class="contact_section">
-          <p>Christoffer Lundberg</p>
-          <p>
-            <a href="mailto:Lundbergarn2@hotmail.com"
-              >Lundbergarn2@hotmail.com</a
-            >
-          </p>
-          <p>Tel: +46(0)73 08 47 282</p>
-        </section>
+          <section class="contact_section">
+            <p>Christoffer Lundberg</p>
+            <p>
+              <a href="mailto:Lundbergarn2@hotmail.com"
+                >Lundbergarn2@hotmail.com</a
+              >
+            </p>
+            <p>Tel: +46(0)73 08 47 282</p>
+          </section>
+        </div>
       </div>
     </main>
 
@@ -151,9 +160,9 @@
       <!-- 	<div class="toTop">
       <a id="upp" class="button" href="#top"></i> Top</a>
     </div> -->
+      <hr class="line_break" />
 
       <div class="icons_bottom">
-        <hr class="line_break" />
         <p id="copyright">All works © Christoffer Lundberg 2018</p>
         <a href="https://se.linkedin.com/in/christoffer-lundberg-7830a48a"
           ><i class="fab fa-linkedin-in"></i

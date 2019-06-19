@@ -1,24 +1,17 @@
-
-
 $(document).ready(function () {
   // Add smooth scrolling to all links
-  var upp = document.getElementById('upp');
-
+  let upp = document.getElementById('upp');
   upp.addEventListener('click', function (event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
-      var hash = this.hash;
-
+      let hash = this.hash;
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({ scrollTop: $(hash).offset().top }, 800,
         function () {
-
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });
@@ -40,7 +33,7 @@ $('a[href*="#"]')
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
-      var target = $(this.hash);
+      let target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
@@ -51,7 +44,7 @@ $('a[href*="#"]')
         }, 700, function () {
           // Callback after animation
           // Must change focus!
-          var $target = $(target);
+          let $target = $(target);
           $target.focus();
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
@@ -66,16 +59,17 @@ $('a[href*="#"]')
 
 
 // Hide navbar on scroll if less then 739
+const menu = document.getElementById("menu");
 
 if ($(window).width() < 739) {
-  var prevScrollpos = window.pageYOffset;
+  let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("menu").style.top = "0";
+      menu.style.top = "0";
     } else {
-      document.getElementById("menu").style.top = "-60px";
-      document.getElementById("menu").style.transition = "all 0.5s ease";
+      menu.style.top = `-${menu.offsetHeight}px`;
+      menu.style.transition = "all 0.3s ease-out";
     }
     prevScrollpos = currentScrollPos;
   }
@@ -84,11 +78,11 @@ if ($(window).width() < 739) {
 
 //Hide watermark
 
-// function hideImage (){
-//   setTimeout(function(){
+// function hideImage() {
+//   setTimeout(function () {
 //     var image = document.getElementsByTagName("img");
-//     image[image.length-1].style.display = 'none';
-//   }, 500);  
+//     image[image.length - 1].style.display = 'none';
+//   }, 500);
 // };
 // hideImage();
 
