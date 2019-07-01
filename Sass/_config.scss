@@ -1,10 +1,10 @@
-$primary-color: #00adb5;
-$dark-color: #016d72;
+$primary-color: #9f144e;
+$dark-color: #830c3d;
 $light-color: #eeeeee;
 $danger-color: #dc3545;
 $success-color: #28a745;
 // $background-color: #222831;
-$background-color: #fff;
+$background-color: #1e1b1f;
 $main-font: #222831;
 $secondary-font: #eee;
 $max-width: 1100px;
@@ -12,8 +12,8 @@ $max-width: 1100px;
 // Set text color based on background
 // Test color. Lighter than 50 return darker color for text.
 @function set-text-color($color) {
-  @if (lightness($color) > 60) {
-    @return #333;
+  @if (lightness($color) > 50) {
+    @return #9f144e;
   } @else {
     @return #fff;
   }

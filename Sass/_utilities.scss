@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 // Container
 .container {
   max-width: $max-width;
@@ -10,7 +14,7 @@
 
 //Text Styles
 .x-large {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -128,9 +132,15 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 1200px) {
   .x-large {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .x-large {
+    font-size: 2.5rem;
   }
   .lead {
     font-size: 1.25rem;
