@@ -36,7 +36,7 @@ a {
 }
 
 p {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 .shadow {
@@ -55,6 +55,10 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.main_color{
+  color: $primary-color;
 }
 
 // Navbar
@@ -224,12 +228,12 @@ main {
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        margin-bottom: 20px;
         margin: 0 30px;
         border: $border;
       }
 
       p {
+        margin: 0 20px;
         padding: 30px;
         color: $main-font;
       }
@@ -245,7 +249,6 @@ main {
       .skills {
         z-index: 1;
         background: $primary-color;
-        line-height: 1.5rem;
         text-align: left;
         padding: 5px;
         margin: 7px 0;
@@ -253,6 +256,7 @@ main {
         width: 80%;
         color: $secondary-font;
         position: relative;
+        letter-spacing: 0.1rem;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
       }
     }
@@ -289,7 +293,6 @@ main {
       text-align: center;
       cursor: pointer;
       overflow: hidden;
-      border: 1px solid white;
       &:hover img {
         transform: scale(1.2);
       }
@@ -299,12 +302,13 @@ main {
         transition: 0.4s ease;
         width: 100%;
       }
+      
     }
 
     .project_items:hover .project_info {
       /*Infotext on hover*/
       bottom: 0;
-      transform: translateY(-70px);
+      transform: translateY(-69px);
       transition: transform 0.4s;
       height: 60px;
     }
@@ -312,7 +316,7 @@ main {
       color: #fff;
       position: relative;
       background: $dark-color;
-      border-top: 1px solid #fff;
+      border-top: 2px solid #fff;
       line-height: 60px;
       transition: all 0.3s ease-in;
     }
@@ -329,13 +333,15 @@ main {
     }
   }
   .contact {
-    height: 100vh;
+    // height: 100vh;
+    padding-bottom: 150px;
 
     h1 {
       padding-top: 140px;
     }
 
     .contact_section {
+      padding-top: 10px;
       p {
         margin: 30px 0;
         color: $main-font;
@@ -432,7 +438,6 @@ footer {
         }
       }
       .right {
-        margin-bottom: 40px;
         margin: 0 20px 50px 20px;
 
         .skills {

@@ -1,0 +1,34 @@
+article {
+	height: auto;
+}
+.moviePoster{
+	width: 275px;
+	padding-right: 30px;
+}
+#bookButton {
+  height: 40px;
+  margin: 0;
+}
+#bookButton a {
+  padding: 15px 50px;
+}
+.textFilm {
+	margin-bottom: 50px;
+}
+br {
+	clear:both;
+}
+.buttons {
+	text-align: center;
+}
+
+@media only screen and (max-width: 1225px) {
+	.moviePoster {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	article {
+		height: auto;
+	}
+}

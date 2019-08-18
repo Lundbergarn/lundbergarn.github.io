@@ -1,0 +1,83 @@
+/* Puffar filmer */
+.puff-article {
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center; 
+}
+
+@media only screen and (max-width: 768px) {
+  .puff-article h2 {
+    font-size: 36px;
+  }
+}
+.puff-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.puff-item {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.35rem;
+}
+.card a .card-img-top:hover{
+opacity: 0.9;
+}
+.card-text {
+ margin-top: -20px;
+ color: black;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+  color: #111;
+}
+.card-img-top {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+/* Sortering filmer*/
+.sortering p {
+  display: inline-block;
+  color: #fff;
+}
+
+.sortering {
+  display: inline-block;
+  padding: 10px;
+}
+
+.sortering select {
+  width:125px;
+  padding: 8px 12px 8px 5px;
+  border-radius: 10px;
+
+}
+.sortering input {
+  padding:8px 42px;
+  border-radius: 10px;
+  margin: 8px 0 0 0;
+  border: 2px solid #78788c;
+  color:#5a5a6e;
+}
+.sortering input:hover{
+  background:#78788c;
+  color:#fff;
+}

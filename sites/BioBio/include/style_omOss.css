@@ -1,0 +1,16 @@
+
+.cinemaImg {
+	width: 600px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 1225px) {
+	.cinemaImg {
+		display: block;
+		width: 100%;
+		clear:both;
+		margin-bottom: 20px;
+	}
+
+}
