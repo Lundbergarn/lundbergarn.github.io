@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>Laboration</title>
+  <meta name="viewport" content="initial-scale=0.7,maximum-scale=0.7, minimum-scale=0.7, user-scalable=no">
+  <meta http-equiv="cache-control" content="no-cache" />
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main>
+    <h1>Slumpa 50 gener i tre färger</h1>
+
+    <div class="program">
+      <p class="info">Slumpa fram gener parvis och radera därefter varje homozygot skadligt par ur genpoolen. </p>
+      <p class="info">Om de två pärlorna är likadana, antingen skadliga eller letala, betyder det att avkomman har fått
+        en sådan allel från fadern och en från modern. Det här är en dödlig kombination som du ska ta bort.</p>
+      <div class="first">
+        <button id="slumpa_50">Slumpa 50</button>
+
+        <br><br>
+
+        Röd: <p class="colors" id="red">0</p>
+        Blå: <p class="colors" id="blue">0</p>
+        Vit: <p class="colors" id="white">0</p>
+
+        <p id="allColors"></p>
+      </div>
+
+      <div class="second">
+        <button id="slumpa_2">Slumpa parvis</button>
+
+        <br><br>
+
+        Skadliga röd: <p class="colors" id="redPair">0</p>
+        Skadliga blå: <p class="colors" id="bluePair">0</p>
+        <br>
+        <p id="generations">Generationer:</p>
+      </div>
+
+    </div>
+
+    <div id="color_pairs"></div>
+
+  </main>
+
+  <script type="text/javascript" src="alleler.js"></script>
+</body>
+
+</html>

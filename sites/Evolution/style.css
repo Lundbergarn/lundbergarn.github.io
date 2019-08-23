@@ -1,0 +1,99 @@
+
+body {
+	background-color: #bdd4d8;
+	font-size: 16px;
+}
+main{
+	margin: 25px;
+}
+h1, h3	{
+  text-align: center;
+  font-weight: 700;
+}
+p {
+	padding-left: 5px;
+  border-radius: 5px;
+}
+button {
+	width: 160px;
+}
+
+.program {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#red , #redPair{
+	background-color: #f2632b;
+	width: 160px;
+	border: 1px solid black;
+}
+
+#blue , #bluePair{
+	background-color: lightblue;
+	width: 160px;
+	border: 1px solid black;
+}
+
+#white {
+	background-color: white;
+	width: 160px;
+	border: 1px solid black;
+}
+
+.colors {
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+.first, .second, .info {
+	background-color:lightgrey;
+	width: 200px;
+	padding: 20px;
+	position: static;
+	border-radius: 10px;
+	margin: 20px;
+	border: 1px solid black;
+  height: 300px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+table {
+  margin: 0 2px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table td, table th {
+  padding: 8px;
+}
+td {
+  border: 1px solid grey;
+  height: 15px;
+  width: 15px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr{
+  margin: 10px 0;
+}
+
+.red {
+  background-color: #f2632b;
+}
+.blue {
+  background-color: lightblue;
+}
+
+#color_pairs{
+  display: flex;
+  width: 100%;
+}
