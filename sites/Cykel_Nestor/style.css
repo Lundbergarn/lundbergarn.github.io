@@ -95,6 +95,9 @@ label {
 .location{
   overflow: hidden;
 }
+.location img{
+  width: 100%;
+}
 .card-row{
   display: flex;
   justify-content: space-between;
@@ -207,6 +210,10 @@ label {
   }
   .brands img{
     width: 33.33%;
+  }
+  .location img{
+    width: 200%;
+    transform: translateX(-200px);
   }
 }
 @media screen and (max-width: 576px) {
