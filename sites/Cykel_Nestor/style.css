@@ -38,7 +38,7 @@ html {
 }
 .navbar-expand-lg .navbar-nav .nav-link{
   color: white;
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
   font-size: 1.1rem;
 }
 .navbar-dark .navbar-toggler{
@@ -66,12 +66,26 @@ label {
   padding-right: 5px;
 }
 .jumbotron-start {
-  background-image: url("img/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: var(--dark-bg-color);
   height: 220px;
+}
+.home-background{
+  background-image: url("img/background7.jpg");
+}
+.cyklar-background{
+  background-image: url("img/background5.jpg");
+}
+.reparation-background{
+  background-image: url("img/background4.jpg");
+}
+.tillbehor-background{
+  background-image: url("img/background3.jpg");
+}
+.kontakt-background{
+  background-image: url("img/background6.jpg");
 }
 
 .jumbotron .lead {
@@ -95,6 +109,7 @@ label {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-color: #f7f7f7;
 }
 .card-body a{
   justify-self: flex-end;
@@ -133,6 +148,11 @@ label {
 
 .brands{
   margin: 60px auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.brands img{
+  width: 16.6666%;
 }
 
 .page-footer {
@@ -155,6 +175,9 @@ label {
 }
 
 @media screen and (max-width: 992px) {
+  .container{
+    max-width: 100%;
+  }
   .jumbotron .lead, .text-reparera {
     width: 100%;
   }
@@ -176,11 +199,20 @@ label {
   }
 }
 @media screen and (max-width: 768px) {
+  .container{
+    max-width: 100%;
+  }
   .card-row{
     flex-direction: column;
   }
+  .brands img{
+    width: 33.33%;
+  }
 }
 @media screen and (max-width: 576px) {
+  .container{
+    max-width: 100%;
+  }
   .jumbotron-start {
     height: 200px;
   }
@@ -189,5 +221,11 @@ label {
   }
   .footer-info div{
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .brands img{
+    width: 50%;
   }
 }
