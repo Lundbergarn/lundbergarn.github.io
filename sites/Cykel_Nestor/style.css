@@ -17,7 +17,6 @@
 html {
   font-size: 16px;
 }
-
 .navbar {
   width: 100%;
   border-bottom: 1px solid white;
@@ -88,8 +87,16 @@ label {
   background-image: url("img/background6.jpg");
 }
 
+.jumbotron{
+  border-radius: 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
 .jumbotron .lead {
   width: 75%;
+}
+.carousel{
+  margin-top: 50px;
+  min-height: 200px;
 }
 
 .location{
@@ -102,6 +109,7 @@ label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 .card-container {
   flex: 1;
@@ -166,17 +174,25 @@ label {
 .page-footer h3, .page-footer li{
   padding-left: 10px;
 }
+.page-footer h3{
+  margin-bottom: 10px;
+}
 .page-footer li, .footer-copyright {
   color: #bbbbbb;
 }
-
+.footer-copyright{
+  margin-top: 30px;
+  background-color: #1b1b1b;
+}
 
 .footer-info{
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-
+.active {
+  background-color: var(--btn-color);
+}
 @media screen and (max-width: 992px) {
   .container{
     max-width: 100%;
