@@ -71,7 +71,7 @@ nav {
   top: 0;
   left: 0;
   background: transparent;
-  height: 60px;
+  height: 70px;
   width: 100%;
   z-index: 1;
   border-bottom: 1px solid grey;
@@ -413,6 +413,16 @@ footer {
     }
     #contact {
       margin-top: 0;
+
+      .contact {
+        padding-bottom: 50px;
+        
+        &:after {
+          content:"";
+          border-bottom: 50px solid $background-color;
+        }
+      }
+
       &:after {
         border-top: 50px solid $background-color;
       }
