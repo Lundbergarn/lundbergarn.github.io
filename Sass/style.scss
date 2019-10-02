@@ -352,33 +352,17 @@ main {
       p {
         margin: 30px 0;
         color: $main-font;
+      }
 
-        a {
-          &:hover {
-            color: $dark-color;
-          }
+      a {
+        .fab {
+          font-size: 1.75rem;
+          margin: 0 10px;
+        }
+        &:hover {
+          color: $dark-color;
         }
       }
-    }
-  }
-}
-
-footer {
-  margin: 100px 0 30px 0;
-  height: 100vh;
-
-  .icons_bottom {
-    display: flex;
-    justify-content: center;
-    line-height: 2rem;
-  }
-
-  .fab {
-    font-size: 1.5rem;
-    margin-left: 20px;
-
-    &:hover {
-      color: $dark-color;
     }
   }
 }
